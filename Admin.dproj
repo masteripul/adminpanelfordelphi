@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{5abf70ab-b239-4893-b686-ab7b6abfc151}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>output\Admin.exe</DCC_DependencyCheckOutputName>
+    <MainSource>Admin.dpr</MainSource>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Define>DEBUG</DCC_Define>
+    <DCC_ExeOutput>.\output</DCC_ExeOutput>
+    <DCC_UnitSearchPath>..\Modul Tambahan 3;E:\Master Component\[In Use]\XLSSuit5\SrcXLS;E:\Master Component\[In Use]</DCC_UnitSearchPath>
+    <DCC_ResourcePath>..\Modul Tambahan 3;E:\Master Component\[In Use]\XLSSuit5\SrcXLS;E:\Master Component\[In Use]</DCC_ResourcePath>
+    <DCC_ObjPath>..\Modul Tambahan 3;E:\Master Component\[In Use]\XLSSuit5\SrcXLS;E:\Master Component\[In Use]</DCC_ObjPath>
+    <DCC_IncludePath>..\Modul Tambahan 3;E:\Master Component\[In Use]\XLSSuit5\SrcXLS;E:\Master Component\[In Use]</DCC_IncludePath>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">True</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">9</VersionInfo><VersionInfo Name="MinorVer">1</VersionInfo><VersionInfo Name="Release">4</VersionInfo><VersionInfo Name="Build">226</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1033</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName">Syahidah Pulsa</VersionInfoKeys><VersionInfoKeys Name="FileDescription">Administrator</VersionInfoKeys><VersionInfoKeys Name="FileVersion">9.1.4.226</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">Admin.dpr</Source></Source></Delphi.Personality><ModelSupport>False</ModelSupport></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="Admin.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="ufrmAdmin.pas">
+      <Form>frmAdmin</Form>
+    </DCCReference>
+    <DCCReference Include="ufrmBantuan.pas">
+      <Form>frmBantuan</Form>
+    </DCCReference>
+    <DCCReference Include="ufrmHakAkses.pas">
+      <Form>frmHakAkses</Form>
+    </DCCReference>
+    <DCCReference Include="ufrmHakAksesOld.pas">
+      <Form>frmHakAksesOld</Form>
+    </DCCReference>
+    <DCCReference Include="ufrmLogin.pas">
+      <Form>frmLogin</Form>
+    </DCCReference>
+    <DCCReference Include="ufrmSettingDatabase.pas">
+      <Form>frmSettingDatabase</Form>
+    </DCCReference>
+  </ItemGroup>
+</Project>
